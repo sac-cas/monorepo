@@ -1,1 +1,10 @@
-<demo-shell-nx-welcome></demo-shell-nx-welcome> <router-outlet></router-outlet>
+<div class="p-m bg-gray-2 h-screen">
+<span>{{'appName' | i18next}}</span>
+  <div>
+    <button class="px-m py-s text-secondary rounded hover:text-primary hover:bg-gray-2" (click)="toggleLanguage()" [disabled]="language === 'en'">en</button>
+    <button class="px-m py-s text-secondary rounded hover:text-primary hover:bg-gray-2" (click)="toggleLanguage()" [disabled]="language === 'de'">de</button>
+  </div>
+  <div class="mt-m">
+    <router-outlet></router-outlet>
+  </div>
+</div>

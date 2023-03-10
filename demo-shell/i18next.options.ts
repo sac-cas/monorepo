@@ -8,7 +8,7 @@ export const i18nextOptions: i18n.InitOptions & {
   fallbackLng: 'en',
   debug: true,
   returnEmptyString: false,
-  ns: ['navigation', 'transaction-research', 'user-management'],
+  ns: ['demo'],
   backend: {
     loadPath: 'assets/locales/{{lng}}.{{ns}}.json',
   },
