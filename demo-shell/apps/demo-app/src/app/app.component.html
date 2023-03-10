@@ -1,5 +1,8 @@
 <div class="p-m bg-gray-2 h-screen">
-<span>{{'appName' | i18next}}</span>
+  <ul class="remote-menu">
+    <li><a routerLink="/">Home</a></li>
+  </ul>
+
   <div>
     <button class="px-m py-s text-secondary rounded hover:text-primary hover:bg-gray-2" (click)="toggleLanguage()" [disabled]="language === 'en'">en</button>
     <button class="px-m py-s text-secondary rounded hover:text-primary hover:bg-gray-2" (click)="toggleLanguage()" [disabled]="language === 'de'">de</button>
