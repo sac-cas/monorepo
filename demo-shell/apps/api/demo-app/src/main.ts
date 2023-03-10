@@ -1,4 +1,5 @@
 import express from 'express';
+import {VersionModel} from "@demo-shell/model/demo";
 
 const host = process.env.HOST ?? 'localhost';
 const port = process.env.PORT ? Number(process.env.PORT) : 3000;
@@ -10,7 +11,8 @@ app.get('/', (req, res) => {
 });
 
 app.get('/version', (req, res) => {
-  res.send({ version: '0.0.1' });
+  const version: VersionModel = { version: '0.0.1' };
+  res.send(version);
 });
 
 app.listen(port, host, () => {

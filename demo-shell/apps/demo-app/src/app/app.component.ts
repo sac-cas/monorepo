@@ -2,6 +2,7 @@ import {Component, Inject, OnInit} from '@angular/core';
 import {I18NEXT_SERVICE, ITranslationService} from "angular-i18next";
 import {HttpClient} from "@angular/common/http";
 import {map, Observable} from "rxjs";
+import {VersionModel} from "@demo-shell/model/demo";
 
 @Component({
   selector: 'demo-shell-root',
@@ -24,7 +25,7 @@ export class AppComponent implements OnInit {
         this.updateState(this.i18NextService.language);
       }
     });
-    this.version = this.httpClient.get<any>('/api/version').pipe(map((versionModel) => versionModel.version));
+    this.version = this.httpClient.get<VersionModel>('/api/version').pipe(map((versionModel) => versionModel.version));
   }
 
   toggleLanguage() {
