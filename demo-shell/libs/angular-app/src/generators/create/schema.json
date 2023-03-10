@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "cli": "nx",
+  "$id": "SaccasApp",
+  "title": "",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "",
+      "x-prompt": "What name would you like to use?"
+    },
+    "tags": {
+      "type": "string",
+      "description": "Add tags to the project (used for linting)",
+      "alias": "t"
+    },
+    "directory": {
+      "type": "string",
+      "description": "A directory where the project is placed"
+    },
+    "i18next": {
+      "type": "boolean",
+      "description": "Adds i18next support and configures routes",
+      "default": true
+    },
+    "addTailwind": {
+      "type": "boolean",
+      "description": "Whether to configure Tailwind CSS for the application.",
+      "default": true
+    },
+    "host": {
+      "type": "string",
+      "description": "The name of the host app to attach this remote app to.",
+      "default": "demo-app",
+      "x-prompt": "What host name should be configured?"
+    },
+    "prefix": {
+      "type": "string",
+      "description": "The prefix to apply to generated selectors."
+    },
+    "port": {
+      "type": "number",
+      "description": "The port on which this app should be served."
+    }
+  },
+  "required": ["name", "host"]
+}

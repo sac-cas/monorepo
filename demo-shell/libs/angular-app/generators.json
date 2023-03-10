@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "name": "angular-app",
+  "version": "0.0.1",
+  "generators": {
+    "angular-app": {
+      "factory": "./src/generators/angular-app/generator",
+      "schema": "./src/generators/angular-app/schema.json",
+      "description": "angular-app generator"
+    },
+    "create": {
+      "factory": "./src/generators/create/generator",
+      "schema": "./src/generators/create/schema.json",
+      "description": "create generator"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+import { Route } from '@angular/router';
+import { I18NEXT_NAMESPACE_RESOLVER } from 'angular-i18next';
+
+export const appRoutes: Route[] = [
+  {
+    path: '',
+    loadChildren: () =>
+      import('./remote-entry/entry.module').then((m) => m.RemoteEntryModule),
+    data: {
+      i18nextNamespaces: ['<%= name %>'],
+    },
+    resolve: {
+      i18next: I18NEXT_NAMESPACE_RESOLVER,
+    },
+  },
+];
