@@ -17,6 +17,7 @@
     "@nrwl/nx-plugin": "^15.8.5",
     "@swc/helpers": "~0.4.11",
     "angular-i18next": "^15.0.5",
+    "http-server": "^14.1.1",
     "i18next": "^22.4.11",
     "i18next-browser-languagedetector": "^7.0.1",
     "i18next-http-backend": "^2.1.1",
