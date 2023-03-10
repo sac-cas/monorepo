@@ -64,7 +64,8 @@
       },
       "defaultConfiguration": "development",
       "options": {
-        "publicHost": "http://localhost:4200"
+        "publicHost": "http://localhost:4200",
+        "proxyConfig": "apps/demo-app/proxy.conf.json"
       }
     },
     "extract-i18n": {

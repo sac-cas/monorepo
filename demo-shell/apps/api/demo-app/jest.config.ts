@@ -1,10 +1,11 @@
 /* eslint-disable */
 export default {
-  displayName: 'angular-app-e2e',
-  preset: '../../jest.preset.js',
+  displayName: 'api-demo-app',
+  preset: '../../../jest.preset.js',
+  testEnvironment: 'node',
   transform: {
     '^.+\\.[tj]s$': ['ts-jest', { tsconfig: '<rootDir>/tsconfig.spec.json' }],
   },
   moduleFileExtensions: ['ts', 'js', 'html'],
-  coverageDirectory: '../../coverage/apps/angular-app-e2e',
+  coverageDirectory: '../../../coverage/apps/api/demo-app',
 };

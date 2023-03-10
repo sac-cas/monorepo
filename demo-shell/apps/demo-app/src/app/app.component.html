@@ -2,11 +2,14 @@
   <ul class="remote-menu">
     <li><a routerLink="/">Home</a></li>
   </ul>
-
+<div>
+  <span>Version: {{version | async}}</span>
   <div>
     <button class="px-m py-s text-secondary rounded hover:text-primary hover:bg-gray-2" (click)="toggleLanguage()" [disabled]="language === 'en'">en</button>
     <button class="px-m py-s text-secondary rounded hover:text-primary hover:bg-gray-2" (click)="toggleLanguage()" [disabled]="language === 'de'">de</button>
   </div>
+</div>
+
   <div class="mt-m">
     <router-outlet></router-outlet>
   </div>
